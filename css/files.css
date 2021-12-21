@@ -1,0 +1,80 @@
+.files-page {
+  animation: fade-in 0.4s;
+}
+.files-page a {
+  font-size: 3rem;
+  text-decoration: none;
+}
+
+.files-page h1 {
+  font-size: 1.75rem;
+  background-color: #696969;
+  width: 250px;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  height: max-content;
+  align-self: center;
+}
+
+.files-list {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 10px;
+}
+
+.files-list .list-item {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 15px;
+  flex: 1;
+  margin: 10px;
+}
+
+.list-item h5 {
+  font-weight: 600;
+  margin: 5px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  width: 90%;
+  word-wrap: break-word;
+}
+
+.list-item button {
+  width: 100%;
+  padding: 5px;
+  border: #2aa852 1px solid;
+  background-color: #fff;
+  color: #2aa852;
+  margin: 5px;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.list-item button:hover {
+  background-color: #2aa852;
+  color: #fff;
+}
+
+.list-item button:active {
+  transform: scale(0.95);
+}
+
+.list-item button:first-of-type {
+  border: #d81010 1px solid;
+  color: #d81010;
+}
+.list-item button:first-of-type:hover {
+  background-color: #d81010;
+  color: #fff;
+}
+@media (max-width: 600px) {
+  .files-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .files-list .list-item {
+    min-width: 90vw;
+  }
+}

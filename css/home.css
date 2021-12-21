@@ -1,0 +1,89 @@
+.ui-page {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  background-color: #ffffff;
+  animation: fade-in 0.3s;
+  flex-direction: column;
+}
+
+.ui-page header {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.ui-page header h1 {
+  align-self: center;
+  border-bottom: 1px solid #8a8a8a;
+  width: 75vw;
+  max-width: 350px;
+  text-align: center;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.ui-page header h2 {
+  align-self: center;
+  border-bottom: 1px solid #dddddd;
+  min-width: 350px;
+  text-align: center;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.ui-page header p {
+  align-self: center;
+  margin: 20px;
+  margin-top: 0;
+  animation: fade-in 0.3s;
+}
+
+.ui-page section {
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.ui-page section a,
+.ui-page section button#btn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  padding: 10px;
+  min-width: 180px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  text-decoration: none !important;
+  transition: all 0.2s;
+  background-color: unset;
+  animation: fade-in 0.3s;
+  border-radius: 5px;
+}
+
+.ui-page section a img,
+.ui-page section button#btn img {
+  margin-top: 5px;
+  align-self: center;
+}
+
+.ui-page section a label,
+.ui-page section button#btn label {
+  align-self: center;
+  margin-top: 5px;
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #808080;
+  text-align: center;
+}
+
+.ui-page section a:active,
+.ui-page section button#btn:active {
+  transform: scale(0.9);
+}
